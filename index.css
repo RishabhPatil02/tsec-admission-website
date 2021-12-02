@@ -1,0 +1,296 @@
+@font-face {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	src: url('./assets/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf') format('woff');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	src: url('./assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf') format('woff');
+}
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: rgb(255, 254, 251);
+}
+
+.maincontainer{
+	height: 230px;
+	background-image: url('./assets/image/header-photo.jpg'); 
+	background-size: cover; 
+	background-attachment: fixed;
+	margin-top: -20px;
+}
+
+
+.jumbotron{
+	height: 100%;
+	background-color: transparent;
+	color: white;
+	width: 100%;
+	margin: auto;
+	padding:10px;
+	padding-top: 20px;
+	background-color: #073366d0; 
+	backdrop-filter: blur(3px); 
+	padding-left: 50px;
+}
+
+.jumbotron h1{
+	font-family: 'Playfair Display', sans-serif;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+.jumbotron h3{
+	font-family: 'Source Sans Pro', serif;
+	text-align: center;
+	font-size: 1.8rem;
+}
+
+.jumbotron h5{
+	font-size: 1.2rem;
+}
+
+.upcoming{
+	font-size: 1.1rem;
+}
+
+.dept{
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; margin: 20px; padding: 20px; background-color: #073366; color: #f64c72; border-radius: 5px;
+}
+
+
+.page-footer{
+	position: relative;
+	width: 100%; 
+	bottom: 0; 
+	padding-top: 20px; 
+	background-color: #073366; 
+	color: white;
+}
+
+.listitems{
+	cursor: pointer;
+	color:#073366;
+	font-weight: 600;
+	font-size: 1.4rem;
+}
+
+td p{
+	color: black;
+}
+
+td{
+	color: black;
+}
+
+.card{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.page-footer a:hover{
+	color: rgb(134, 134, 134);
+}
+
+.listitems:hover{
+	color: #f64c72;
+}
+
+.act{
+	color:#f64c72;
+}
+
+.pf{
+	font-family: 'Playfair Display';
+}
+
+p{
+	font-size: 1.15rem;
+
+	margin-bottom: 25px;
+}
+
+
+.title{
+	width:100%;
+	justify-content: center; 
+	margin: auto; 
+	color: white;
+}
+
+
+.documents{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.documents_title{
+	font-size:  2rem;
+	margin-top: 20px;
+	color: #073366;
+}
+
+.documents_secondary_title{
+	font-size:  1.2rem;
+	font-weight: 600;
+}
+
+
+@media only screen and (min-width: 600px){
+	.jumbotron{
+		display: flex; flex-direction: row;
+	}
+	.w3-quarter{
+		border-left: 1px solid black;
+	}
+	.logo{
+		overflow:hidden; height:150px; margin: auto;
+	}
+	
+}
+
+
+@media only screen and (max-width: 600px){
+	.logo{
+		width: 60%;
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-bottom: 5%;
+	}
+	
+	
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+	color: rgb(156, 154, 154);
+}
+
+.new{
+	height: 25px;
+}
+span.give-me-space { 
+	padding: 2rem; 
+}
+
+/*table1*/
+table.fees th, td{
+	border: 1px solid black;
+}
+table.fees td p{
+	margin: 5px 10px 5px 10px;
+}
+table.fees{
+	margin: auto;
+	border: 1px solid black;
+}
+table.fees td:nth-child(3)
+{
+	text-align: right;
+	margin-right: 20px;
+}
+table.fees td:nth-child(1)
+{
+	text-align: center;
+}
+
+/*Candidature table*/
+table.candidate_type th, td {
+	border: 1px solid black;
+}
+table.candidate_type td {
+	
+	padding: 10px;
+
+}
+table.candidate_type{
+	margin: auto;
+	
+}
+table.candidate_type td:nth-child(1)
+{
+	text-align: center;
+}
+
+/*table2*/
+table.fees1 td:nth-child(1)
+{
+	text-align: center;
+}
+table.fees1 td:nth-child(3),table.fees1 td:nth-child(4),table.fees1 td:nth-child(5),table.fees1 td:nth-child(6),table.fees1 td:nth-child(7),table.fees1 td:nth-child(8),table.fees1 td:nth-child(9)
+{
+	text-align: right;
+	
+}
+
+@media only screen and (max-width:600px){
+	.maincontainer{
+		height: 600px;
+	}
+}
+
+
+
+@media only screen and (max-width:420px){
+	.maincontainer{
+		height: 600px;
+	}
+
+	.advertise img{
+		width: 98%;
+	}
+}
+
+@media only screen and (max-width:600px) {
+	
+	table.fees1, thead.fees1, tbody.fees1, th.fees1, td.fees1, tr.fees1 { 
+		display: block; 
+	}
+	table.fees1{
+		
+		
+	}
+}
+
+.show-hide {
+	padding: 8px;
+	display: none;
+	margin-top: 10px;
+	float: right;
+	padding-bottom: 4px;
+}
+
+@media only screen and (max-width:600px) {
+	.show-hide {
+		display: inline-block;
+	}
+	.jumbotron{
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.information {
+		display: none;
+		border-bottom: 1px solid black;
+	}
+	.information.toggle {
+		display: block;
+	}
+}
+.line {
+	width: 100%;
+	float: left;
+	height: 1px;
+	background-color: black;
+	margin-bottom: 4px;
+}
+.logo{
+	cursor: pointer;
+}
+.dept{
+	cursor: pointer;
+}
